@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "address": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "stars": {
+      "type": "integer",
+       "minimum": 0,
+       "maximum": 5
+    },
+    "uri":{
+      "type":"string",
+      "format":"url",
+      "pattern": "^http.*"
+    }
+  },
+  "required": [
+    "name",
+    "address",
+    "stars",
+    "contact",
+    "phone",
+    "uri"
+  ]
+}
